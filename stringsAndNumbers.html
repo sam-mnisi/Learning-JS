@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+        <body>
+            <p id = "outputText"></p>
+            <script>
+                var text1 = "16";
+                var text2 = "5";
+                
+                var num1 = stringToNumber(text1);
+                var num2 = stringToNumber(text2);
+                
+                if(isNaN(num1) || isNaN(num2)){
+                    document.getElementById("outputText").innerHTML = "Enter a valid number";
+                } else{
+                    document.getElementById("outputText").innerHTML = num1 - num2;
+                }
+                
+                //converting text to num to ensure no error when a user inputs text instead of a num e.g Javascript will treat other arithmetic operations as such unlike + which it primarily treats as a concatination where text remains unchanged(not parsed) 
+                function stringToNumber(text){
+                    return parseInt(text);
+                }
+                          
+            </script>
+        
+        </body>
+</html>

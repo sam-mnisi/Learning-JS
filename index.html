@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+        <body>
+            <h1 id="heading1"></h1>
+            <p id="paragraph1">Everyone</p>
+            <p id="paragraph2"></p>
+            
+            <script>
+                //declare variable
+                var text1;
+                var text2;
+                var text3;
+                
+                //declare and assign
+                var numA = 9;
+                var numB = 22;
+                
+                //assign values to variables
+                text1 = "Hello people!";
+                text2 = " Learning is a lifelong journey.";
+                text3 = " I'm here for it."
+                
+                //input texts, numbers, and/or arithmetic e.t.c inside an output
+                document.getElementById("heading1").innerHTML=(text1 + text2 + text3);
+                //After the string 'dogs' the number 2+2 were not added together, this is because it treated these like a string 
+                document.getElementById("paragraph1").innerHTML=(5 + " Dogs " +  2+2);
+                //Here even after a string it still counts the two numbers (arithmetic), this is because they have already been declared as numbers and assigned a numeric value.
+                document.getElementById("paragraph2").innerHTML=("Equation: " + numA + " x " + numB + " = " + numA*numB);
+                
+            </script>
+        </body>
+</html>
